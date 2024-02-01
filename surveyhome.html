@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOME </title>
+<style>
+  body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("./kietimage.jpg");
+
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-position: center;
+}
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #512da8;
+    color: #512da8;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 5px;
+  }
+  .button a{
+    text-decoration: none;
+    color:#512da8 ;
+}
+  h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 40px;
+}
+
+  .button:hover {
+    background-color: #512da8;
+    color: white;
+  }
+
+  button a:hover{
+    text-decoration: dashed;
+    font-size: large;
+    color: white;
+  }
+  body{
+    background: linear-gradient(to right, #7541b4, #512da8);
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #eee;
+    border: none;
+    margin: 40px 0;
+    padding: 40px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: fit-content;
+    outline: none;
+    height: 230px;
+} 
+.container img {
+    width: 150px;
+    height: 150px; 
+    margin-right: 20px;
+    border-radius: 10%;
+}
+
+</style>
+</head>
+<body>
+<center>
+<div class="container">
+  <img src="kietlogo.jpg" alt="KIET LOGO">
+</div>
+<div class="box">
+<h2>Select your position</h2>
+<button class="button"><a href="http://127.0.0.1:5500/surveystudents.html">Student</a></button>
+<br><button class="button"><a href="http://127.0.0.1:5500/surveyteachers.html">Teacher</a></button>
+<br><button class="button"><a href="http://127.0.0.1:5500/surveyalumni.html">Alumni</a></button>
+<br><button class="button"><a href="http://127.0.0.1:5500/surveyparents.html">Parents</a></button>
+</div>
+</center>
+</body>
+</html>

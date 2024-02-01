@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SURVEY FORM</title>
+
+    <link rel="stylesheet" href="./survey.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title" class="text_center">KIET GROUP OF INSTITUTIONS</h1>
+
+        <p id="description" class="description text_center">
+          SURVEY FORM FOR TEACHERS
+        </p>
+      </header>
+
+      <form id="survey_form" autocomplete="off">
+        <div class="form_group">
+          <label for="name" id="name_label"> Name </label>
+          <input type="text" name="name" id="name" class="form_control" placeholder="Enter your name" required/>
+        </div>
+        <div class="form_group">
+          <label for="number" id="number_label"> How many years have you been teaching at this college? </label>
+          <input type="number" name="year" id="number" min="1" max="60" class="form_control" placeholder="Year"/>
+        </div>
+        <div class="form_group">
+          <label for="department" id="department_label"> Department </label>
+          <input type="text" name="department" id="department" class="form_control" placeholder=" Department" required/>
+        </div>
+        <div class="form_group">
+          <label for="email" id="email_label"> Email ID</label>
+          <input type="email" name="email" id="email" class="form_control" placeholder="Enter your email" required/>
+        </div>
+
+
+        <div class="form_group">
+          <label for="facilities">How satisfied are you with the opportunities for professional growth and advancement offered by the college?(1-10):</label>
+        <input type="number" id="facilities" name="facilities" min="1" max="10" required>
+        </div>
+
+        <div class="form_group">
+          <label for="facilities">Rate the level of support provided by the college administration for faculty needs and concerns (1-10):</label>
+        <input type="number" id="facilities" name="facilities" min="1" max="10" required>
+        </div>
+       
+        <div class="form_group">
+          <label for="services">Rate the effectiveness of feedback mechanisms provided by the college for faculty improvement(1-10):</label>
+          <input type="number" id="services" name="services" min="1" max="10" required>
+          </div>
+
+          <div class="form_group">
+            <label for="services">Rate the level of student engagement and participation in your classes(1-10):</label>
+            <input type="number" id="services" name="services" min="1" max="10" required>
+            </div>
+
+        <div class="form_group">
+          <p>Any comments or suggestions?</p>
+          <textarea name="comment" class="input_textarea" id="comment" placeholder="Enter your comment here..." ></textarea>
+        </div>
+
+        <div class="form_group">
+          <button type="submit" class="submit_btn"><a href="http://127.0.0.1:5500/surveythanku.html">Submit</a></button>
+        </div>
+      </form>
+    </div>
+    <script src="survey.js"></script>
+  </body>
+</html>
